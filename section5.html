@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio Web Institucional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./Styles.css" rel="stylesheet" />
+    <style>
+      /* Custom CSS for transitions and animations */
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.5s ease;
+      }
+      .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+        opacity: 0;
+      }
+
+      /* Ensure images fit within the container */
+     
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white font-bold w-32 text-sm">
+        
+        </div>
+        <div class="block lg:hidden">
+          <button id="nav-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a
+            href="index.html"
+            data-section="section1"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Portada</a
+          >
+          <a
+            href="section2.html"
+            data-section="section2"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Legislación Informática</a
+          >
+          <a
+            href="section3.html"
+            data-section="section3"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Leyes Nacionales e Internacionales</a
+          >
+          <a
+            href="section4.html"
+            data-section="section4"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Trámite de Registro de Obras</a
+          >
+          <a
+            href="section5.html"
+            data-section="section5"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Ética Informática</a
+          >
+          <a
+            href="section6.html"
+            data-section="section6"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Delitos Informáticos</a
+          >
+          <a
+            href="section7.html"
+            data-section="section7"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Conclusiones y Referencias</a
+          >
+        </div>
+      </div>
+      <div id="nav-menu" class="lg:hidden hidden">
+        <a
+          href="index.html"
+          data-section="section1"
+          class="block text-white bg-blue-600 p-2"
+          >Portada</a
+        >
+        <a
+          href="section2.html"
+          data-section="section2"
+          class="block text-white bg-blue-600 p-2"
+          >Legislación Informática</a
+        >
+        <a
+          href="section3.html"
+          data-section="section3"
+          class="block text-white bg-blue-600 p-2"
+          >Leyes Nacionales e Internacionales</a
+        >
+        <a
+          href="section4.html"
+          data-section="section4"
+          class="block text-white bg-blue-600 p-2"
+          >Trámite de Registro de Obras</a
+        >
+        <a
+          href="section5.html"
+          data-section="section5"
+          class="block text-white bg-blue-600 p-2"
+          >Ética Informática</a
+        >
+        <a
+          href="section6.html"
+          data-section="section6"
+          class="block text-white bg-blue-600 p-2"
+          >Delitos Informáticos</a
+        >
+        <a
+          href="section7.html"
+          data-section="section7"
+          class="block text-white bg-blue-600 p-2"
+          >Conclusiones y Referencias</a
+        >
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto p-4">
+      <div id="section5">
+        <h1 class="text-4xl font-bold mb-4">Ética Informática</h1>
+        <h2 class="text-3xl font-bold mt-4 mb-2">
+          2. Ética informática y delitos informáticos
+        </h2>
+        <article class="mb-6">
+          <h3 class="text-xl font-semibold mb-2">
+            2.1 Conceptos de Ética y Delitos Informáticos
+          </h3>
+
+          <p class="mb-4">
+            La ética informática y los delitos informáticos son áreas esenciales
+            en el campo de la tecnología, abarcando tanto las normas de conducta
+            adecuada como las actividades ilegales asociadas al uso de la
+            tecnología. A continuación, se detallan los conceptos clave
+            relacionados con cada uno de estos temas:
+          </p>
+
+          <div class="mb-6">
+            <h4 class="text-lg font-semibold mb-2">Ética Informática</h4>
+            <p class="mb-2">
+              La ética informática se refiere a los principios que guían el
+              comportamiento profesional y personal en el ámbito de la
+              tecnología. Incluye:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Responsabilidad Profesional:</strong> Los profesionales
+                de la tecnología deben actuar con responsabilidad, integridad y
+                justicia. Esto incluye evitar la divulgación de información
+                confidencial y la manipulación indebida de datos.
+              </li>
+              <li>
+                <strong>Respeto a la Privacidad:</strong> Se debe proteger la
+                privacidad de los usuarios y sus datos. Esto implica implementar
+                prácticas seguras de manejo de datos y garantizar que los datos
+                personales no sean usados sin consentimiento.
+              </li>
+              <li>
+                <strong>Transparencia:</strong> Los usuarios deben ser
+                informados claramente sobre cómo se recopilan, utilizan y
+                protegen sus datos. Las políticas de privacidad deben ser
+                comprensibles y accesibles.
+              </li>
+              <li>
+                <strong>Seguridad:</strong> Asegurar que los sistemas y redes
+                sean protegidos contra accesos no autorizados y
+                vulnerabilidades. Esto incluye aplicar medidas de ciberseguridad
+                y mantener sistemas actualizados.
+              </li>
+              <li>
+                <strong>Justicia:</strong> Promover la equidad en el acceso a
+                las tecnologías y servicios digitales, evitando prácticas
+                discriminatorias y garantizando que la tecnología se utilice
+                para el beneficio de todos.
+              </li>
+            </ul>
+            <p class="mt-2">
+              La ética informática es fundamental para la confianza en las
+              tecnologías y para el correcto funcionamiento de las sociedades
+              digitales.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Delitos Informáticos</h4>
+            <p class="mb-2">
+              Los delitos informáticos son actividades ilegales realizadas a
+              través de la tecnología, que pueden causar daño a individuos,
+              organizaciones o sistemas. Algunos ejemplos incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Hacking:</strong> Acceso no autorizado a sistemas o
+                redes con el objetivo de obtener información, dañar sistemas o
+                interrumpir servicios. Esto puede incluir la explotación de
+                vulnerabilidades en software o hardware.
+              </li>
+              <li>
+                <strong>Robo de Datos:</strong> Obtención y uso indebido de
+                datos personales o financieros sin permiso. Esto puede ocurrir
+                mediante técnicas como phishing, malware o ataques de ingeniería
+                social.
+              </li>
+              <li>
+                <strong>Fraude en Línea:</strong> Actividades engañosas
+                realizadas en el entorno digital para obtener beneficios
+                ilegales, como estafas a través de correos electrónicos falsos,
+                sitios web fraudulentos o transacciones financieras manipuladas.
+              </li>
+              <li>
+                <strong>Difusión de Malware:</strong> Creación y distribución de
+                software malicioso diseñado para dañar sistemas, robar datos o
+                comprometer la seguridad. Esto incluye virus, gusanos, troyanos
+                y ransomware.
+              </li>
+              <li>
+                <strong>Suplantación de Identidad:</strong> Uso no autorizado de
+                la identidad de otra persona para cometer fraudes o realizar
+                actividades ilegales. Esto puede incluir la falsificación de
+                documentos digitales o la creación de perfiles falsos en redes
+                sociales.
+              </li>
+            </ul>
+            <p class="mt-2">
+              La lucha contra los delitos informáticos implica medidas
+              preventivas, como la educación en ciberseguridad, el uso de
+              tecnologías de protección y la cooperación entre autoridades y
+              organizaciones.
+            </p>
+          </div>
+        </article>
+        <img
+          src="./Images/delito.jpg"
+          alt="Ética informática"
+          class="w-full mb-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

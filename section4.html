@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio Web Institucional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./Styles.css" rel="stylesheet" />
+    <style>
+      /* Custom CSS for transitions and animations */
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.5s ease;
+      }
+      .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+        opacity: 0;
+      }
+
+      /* Ensure images fit within the container */
+     
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white font-bold w-32 text-sm">
+        
+        </div>
+        <div class="block lg:hidden">
+          <button id="nav-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a
+            href="index.html"
+            data-section="section1"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Portada</a
+          >
+          <a
+            href="section2.html"
+            data-section="section2"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Legislación Informática</a
+          >
+          <a
+            href="section3.html"
+            data-section="section3"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Leyes Nacionales e Internacionales</a
+          >
+          <a
+            href="section4.html"
+            data-section="section4"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Trámite de Registro de Obras</a
+          >
+          <a
+            href="section5.html"
+            data-section="section5"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Ética Informática</a
+          >
+          <a
+            href="section6.html"
+            data-section="section6"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Delitos Informáticos</a
+          >
+          <a
+            href="section7.html"
+            data-section="section7"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Conclusiones y Referencias</a
+          >
+        </div>
+      </div>
+      <div id="nav-menu" class="lg:hidden hidden">
+        <a
+          href="index.html"
+          data-section="section1"
+          class="block text-white bg-blue-600 p-2"
+          >Portada</a
+        >
+        <a
+          href="section2.html"
+          data-section="section2"
+          class="block text-white bg-blue-600 p-2"
+          >Legislación Informática</a
+        >
+        <a
+          href="section3.html"
+          data-section="section3"
+          class="block text-white bg-blue-600 p-2"
+          >Leyes Nacionales e Internacionales</a
+        >
+        <a
+          href="section4.html"
+          data-section="section4"
+          class="block text-white bg-blue-600 p-2"
+          >Trámite de Registro de Obras</a
+        >
+        <a
+          href="section5.html"
+          data-section="section5"
+          class="block text-white bg-blue-600 p-2"
+          >Ética Informática</a
+        >
+        <a
+          href="section6.html"
+          data-section="section6"
+          class="block text-white bg-blue-600 p-2"
+          >Delitos Informáticos</a
+        >
+        <a
+          href="section7.html"
+          data-section="section7"
+          class="block text-white bg-blue-600 p-2"
+          >Conclusiones y Referencias</a
+        >
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto p-4">
+      <div id="section4">
+        <h1 class="text-4xl font-bold mb-4">Trámite de Registro de Obras</h1>
+        <h2 class="text-3xl font-bold mt-4 mb-2">
+          1.4 Proceso de trámite de registro de obras ante la institución de
+          derechos de autor
+        </h2>
+        <article class="mb-6">
+          <p class="mb-4">
+            El proceso de registro de obras ante la institución de derechos de
+            autor se compone de varios pasos fundamentales para asegurar la
+            protección legal de la obra. A continuación, se detalla cada uno de
+            estos pasos:
+          </p>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              1. Completar el Formulario de Solicitud
+            </h3>
+            <p class="mb-2">
+              El primer paso en el proceso de registro es llenar un formulario
+              de solicitud que puede obtenerse en la institución de derechos de
+              autor o en su sitio web. El formulario generalmente requiere:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Datos completos del autor (nombre, dirección, información de
+                contacto).
+              </li>
+              <li>Descripción detallada de la obra.</li>
+              <li>Declaración de originalidad y derechos sobre la obra.</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              2. Presentar una Copia de la Obra
+            </h3>
+            <p class="mb-2">
+              Una vez completado el formulario, debes presentar una copia de la
+              obra que se desea registrar. Dependiendo del tipo de obra, esto
+              puede incluir:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Textos impresos o digitales para obras literarias.</li>
+              <li>
+                Archivos de audio o video para obras musicales o audiovisuales.
+              </li>
+              <li>Imágenes digitales o físicas para obras de arte visual.</li>
+            </ul>
+            <p class="mt-2">
+              La obra puede ser entregada en formato físico o digital, según las
+              especificaciones de la institución.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              3. Realizar el Pago de las Tarifas
+            </h3>
+            <p class="mb-2">
+              El siguiente paso es pagar las tarifas correspondientes para el
+              registro. Estas tarifas pueden variar según:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Tipo de obra.</li>
+              <li>Complejidad del registro.</li>
+              <li>Jurisdicción de la institución.</li>
+            </ul>
+            <p class="mt-2">
+              Asegúrate de verificar el monto exacto y los métodos de pago
+              aceptados por la institución.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-2">
+              4. Esperar la Revisión y Aprobación por Parte de la Institución
+            </h3>
+            <p class="mb-2">
+              Tras presentar todos los documentos y pagar las tarifas, la
+              institución de derechos de autor procederá a revisar y procesar la
+              solicitud. Este proceso incluye:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Verificación de la autenticidad y originalidad de la obra.
+              </li>
+              <li>
+                Revisión de los documentos y cumplimiento de los requisitos.
+              </li>
+              <li>Emisión del certificado de registro una vez aprobado.</li>
+            </ul>
+            <p class="mt-2">
+              El tiempo de espera para la revisión y aprobación puede variar,
+              por lo que es recomendable consultar el tiempo estimado de
+              procesamiento con la institución.
+            </p>
+          </div>
+        </article>
+        <img
+          src="./Images/firma.jpg"
+          alt="Proceso de registro"
+          class="w-full mb-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        />
+        <h2 class="text-3xl font-bold mt-4 mb-2">
+          1.5 Proceso de elaboración de avisos de privacidad
+        </h2>
+        <article class="mb-6">
+          <p class="mb-4">
+            Elaborar avisos de privacidad es un proceso crucial para garantizar
+            la protección de los datos personales que se recopilan de los
+            usuarios. Aquí se detallan los pasos clave para la elaboración
+            efectiva de estos avisos:
+          </p>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              1. Identificar Qué Datos Personales se Recopilan y con Qué
+              Propósito
+            </h3>
+            <p class="mb-2">
+              El primer paso en la elaboración de un aviso de privacidad es
+              identificar claramente qué datos personales se recopilarán y con
+              qué finalidad. Esto incluye:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Tipos de datos personales recopilados (nombre, dirección, correo
+                electrónico, etc.).
+              </li>
+              <li>
+                Propósitos para los cuales se utilizarán estos datos (marketing,
+                análisis, servicio al cliente, etc.).
+              </li>
+            </ul>
+            <p class="mt-2">
+              Es esencial ser transparente sobre el uso de los datos para
+              construir confianza con los usuarios.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              2. Informar a los Usuarios sobre Cómo se Utilizarán sus Datos
+            </h3>
+            <p class="mb-2">
+              Una vez identificados los datos y su propósito, el siguiente paso
+              es informar claramente a los usuarios sobre cómo se utilizarán sus
+              datos. Esto debe incluir:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Descripción detallada de los usos previstos de los datos.</li>
+              <li>
+                Quiénes tendrán acceso a los datos (empleados, terceros, etc.).
+              </li>
+              <li>Duración del tiempo que se conservarán los datos.</li>
+            </ul>
+            <p class="mt-2">
+              Esta información debe ser clara, accesible y fácilmente
+              comprensible.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              3. Garantizar que los Datos se Almacenarán de Manera Segura
+            </h3>
+            <p class="mb-2">
+              La protección de los datos personales es fundamental. Por ello, se
+              debe asegurar que los datos se almacenarán de manera segura
+              mediante:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Implementación de medidas de seguridad físicas y digitales.
+              </li>
+              <li>
+                Uso de tecnologías de encriptación para proteger los datos
+                almacenados.
+              </li>
+              <li>Políticas de acceso restringido a los datos.</li>
+            </ul>
+            <p class="mt-2">
+              La seguridad de los datos contribuye a proteger la privacidad de
+              los usuarios y a cumplir con la normativa de protección de datos.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-2">
+              4. Proporcionar Opciones para que los Usuarios Puedan Controlar
+              sus Datos Personales
+            </h3>
+            <p class="mb-2">
+              Los usuarios deben tener control sobre sus datos personales. Por
+              lo tanto, el aviso de privacidad debe incluir:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Opciones para acceder, rectificar, cancelar o oponerse al uso de
+                sus datos (derechos ARCO).
+              </li>
+              <li>
+                Procedimientos para solicitar la eliminación de datos o cambiar
+                sus preferencias de privacidad.
+              </li>
+              <li>
+                Información de contacto para consultas o solicitudes
+                relacionadas con los datos personales.
+              </li>
+            </ul>
+            <p class="mt-2">
+              Facilitar el control de los datos a los usuarios no solo cumple
+              con la normativa, sino que también refuerza la confianza y la
+              satisfacción del cliente.
+            </p>
+          </div>
+        </article>
+        <img
+          src="./Images/aviso.jpg"
+          alt="Avisos de privacidad"
+          class="w-full mb-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      
+    </div>
+
+    
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

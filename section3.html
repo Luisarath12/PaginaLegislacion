@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio Web Institucional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./Styles.css" rel="stylesheet" />
+    <style>
+      /* Custom CSS for transitions and animations */
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.5s ease;
+      }
+      .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+        opacity: 0;
+      }
+
+      /* Ensure images fit within the container */
+     
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white font-bold w-32 text-sm">
+        
+        </div>
+        <div class="block lg:hidden">
+          <button id="nav-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a
+            href="index.html"
+            data-section="section1"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Portada</a
+          >
+          <a
+            href="section2.html"
+            data-section="section2"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Legislación Informática</a
+          >
+          <a
+            href="section3.html"
+            data-section="section3"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Leyes Nacionales e Internacionales</a
+          >
+          <a
+            href="section4.html"
+            data-section="section4"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Trámite de Registro de Obras</a
+          >
+          <a
+            href="section5.html"
+            data-section="section5"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Ética Informática</a
+          >
+          <a
+            href="section6.html"
+            data-section="section6"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Delitos Informáticos</a
+          >
+          <a
+            href="section7.html"
+            data-section="section7"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Conclusiones y Referencias</a
+          >
+        </div>
+      </div>
+      <div id="nav-menu" class="lg:hidden hidden">
+        <a
+          href="index.html"
+          data-section="section1"
+          class="block text-white bg-blue-600 p-2"
+          >Portada</a
+        >
+        <a
+          href="section2.html"
+          data-section="section2"
+          class="block text-white bg-blue-600 p-2"
+          >Legislación Informática</a
+        >
+        <a
+          href="section3.html"
+          data-section="section3"
+          class="block text-white bg-blue-600 p-2"
+          >Leyes Nacionales e Internacionales</a
+        >
+        <a
+          href="section4.html"
+          data-section="section4"
+          class="block text-white bg-blue-600 p-2"
+          >Trámite de Registro de Obras</a
+        >
+        <a
+          href="section5.html"
+          data-section="section5"
+          class="block text-white bg-blue-600 p-2"
+          >Ética Informática</a
+        >
+        <a
+          href="section6.html"
+          data-section="section6"
+          class="block text-white bg-blue-600 p-2"
+          >Delitos Informáticos</a
+        >
+        <a
+          href="section7.html"
+          data-section="section7"
+          class="block text-white bg-blue-600 p-2"
+          >Conclusiones y Referencias</a
+        >
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto p-4">
+      <div id="section3">
+        <h1 class="text-4xl font-bold mb-4">
+          Leyes Nacionales e Internacionales
+        </h1>
+        <h2 class="text-3xl font-bold mt-4 mb-2">
+          1.2 Leyes nacionales e internacionales aplicables a los derechos de
+          autor, privacidad y protección de datos
+        </h2>
+        <article class="mb-6">
+          <p class="mb-4">
+            Existen diversas leyes tanto a nivel nacional como internacional que
+            regulan los derechos de autor y la protección de datos. Entre las
+            más relevantes se encuentran:
+          </p>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              Ley Federal del Derecho de Autor en México
+            </h3>
+            <p class="mb-2">
+              Esta ley protege los derechos de los autores de obras literarias y
+              artísticas en México. Establece las bases para el reconocimiento y
+              la protección de los derechos morales y patrimoniales de los
+              autores. Algunos de los aspectos más destacados de esta ley
+              incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Protección automática a partir del momento de la creación.
+              </li>
+              <li>Derechos morales inalienables e irrenunciables.</li>
+              <li>
+                Duración de los derechos patrimoniales por la vida del autor más
+                100 años.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              Reglamento General de Protección de Datos (GDPR) en Europa
+            </h3>
+            <p class="mb-2">
+              El GDPR es una regulación en la ley de protección de datos y
+              privacidad en la Unión Europea y el Espacio Económico Europeo. Su
+              objetivo principal es darle a los individuos control sobre sus
+              datos personales y simplificar el entorno regulatorio para los
+              negocios internacionales. Algunos puntos clave incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Consentimiento claro y explícito para el procesamiento de datos.
+              </li>
+              <li>
+                Derecho de los individuos a acceder a sus datos personales.
+              </li>
+              <li>
+                Obligación de notificar brechas de datos a las autoridades de
+                protección de datos y a los individuos afectados.
+              </li>
+              <li>
+                Posibilidad de imponer multas significativas por incumplimiento.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-2">
+              Digital Millennium Copyright Act (DMCA) en Estados Unidos
+            </h3>
+            <p class="mb-2">
+              La DMCA es una ley de copyright de los Estados Unidos que
+              criminaliza la producción y difusión de tecnología, dispositivos o
+              servicios destinados a eludir medidas que controlan el acceso a
+              obras protegidas por derechos de autor. Algunos elementos
+              importantes de la DMCA son:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Protección de los derechos de autor en el entorno digital.
+              </li>
+              <li>
+                Limitaciones de responsabilidad para los proveedores de
+                servicios de Internet (ISP).
+              </li>
+              <li>
+                Establecimiento de procedimientos para la eliminación de
+                contenido infractor.
+              </li>
+              <li>
+                Provisión de exenciones para ciertos tipos de uso, como la
+                investigación y la educación.
+              </li>
+            </ul>
+          </div>
+        </article>
+        <img
+          src="./Images/imageen2.jpg"
+          alt="Leyes internacionales"
+          class="w-full mb-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        />
+        <h2 class="text-3xl font-bold mt-4 mb-2">
+          1.3 Trámites y requisitos de registro de obras ante la institución de
+          derechos de autor
+        </h2>
+        <article class="mb-6">
+          <p class="mb-4">
+            Para registrar una obra ante la institución de derechos de autor, se
+            deben cumplir ciertos requisitos y seguir varios trámites. A
+            continuación, se detallan los pasos necesarios:
+          </p>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              1. Presentar una Solicitud Formal
+            </h3>
+            <p class="mb-2">
+              El primer paso es llenar un formulario de solicitud proporcionado
+              por la institución de derechos de autor correspondiente. Este
+              formulario generalmente incluye:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Datos personales del autor (nombre, dirección, etc.).</li>
+              <li>Descripción de la obra.</li>
+              <li>Declaración de originalidad.</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              2. Proporcionar una Copia de la Obra
+            </h3>
+            <p class="mb-2">
+              Se debe entregar una copia completa de la obra que se desea
+              registrar. Dependiendo del tipo de obra, esto puede incluir:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Manuscritos o textos impresos para obras literarias.</li>
+              <li>Grabaciones para obras musicales.</li>
+              <li>Imágenes o archivos digitales para obras de arte visual.</li>
+              <li>Guiones o películas para obras audiovisuales.</li>
+            </ul>
+            <p class="mt-2">
+              La copia de la obra puede ser física o digital, según lo requiera
+              la institución.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              3. Pagar las Tarifas Correspondientes
+            </h3>
+            <p class="mb-2">
+              El registro de una obra está sujeto al pago de tarifas que varían
+              según el tipo de obra y la jurisdicción. Estas tarifas cubren:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>Costos administrativos.</li>
+              <li>Emisión de certificados de registro.</li>
+              <li>Servicios de búsqueda y verificación.</li>
+            </ul>
+            <p class="mt-2">
+              Es importante verificar el monto y el método de pago aceptado por
+              la institución de derechos de autor.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold mb-2">
+              4. Obtener el Certificado de Registro
+            </h3>
+            <p class="mb-2">
+              Una vez cumplidos todos los requisitos y aprobado el trámite, se
+              emite un certificado de registro que:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Acredita la titularidad de los derechos de autor sobre la obra.
+              </li>
+              <li>Sirve como prueba legal en caso de disputas.</li>
+            </ul>
+            <p class="mt-2">
+              Este certificado generalmente se recibe en formato físico y/o
+              digital.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-2">
+              Recomendaciones Adicionales
+            </h3>
+            <p class="mb-2">
+              Para facilitar el proceso de registro y asegurar la protección de
+              los derechos de autor, se recomienda:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                Consultar la legislación vigente y las guías proporcionadas por
+                la institución de derechos de autor.
+              </li>
+              <li>
+                Guardar copias adicionales de todos los documentos y la obra
+                registrada.
+              </li>
+              <li>
+                Buscar asesoría legal en caso de dudas o situaciones complejas.
+              </li>
+            </ul>
+          </div>
+        </article>
+        <img
+          src="./Images/imageen3.jpg"
+          alt="Registro de obras"
+          class="w-full mb-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

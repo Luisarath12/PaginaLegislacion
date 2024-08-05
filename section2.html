@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio Web Institucional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./Styles.css" rel="stylesheet" />
+    <style>
+      /* Custom CSS for transitions and animations */
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.5s ease;
+      }
+      .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+        opacity: 0;
+      }
+
+      /* Ensure images fit within the container */
+     
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white font-bold w-32 text-sm">
+        
+        </div>
+        <div class="block lg:hidden">
+          <button id="nav-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a
+            href="index.html"
+            data-section="section1"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Portada</a
+          >
+          <a
+            href="section2.html"
+            data-section="section2"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Legislación Informática</a
+          >
+          <a
+            href="section3.html"
+            data-section="section3"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Leyes Nacionales e Internacionales</a
+          >
+          <a
+            href="section4.html"
+            data-section="section4"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Trámite de Registro de Obras</a
+          >
+          <a
+            href="section5.html"
+            data-section="section5"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Ética Informática</a
+          >
+          <a
+            href="section6.html"
+            data-section="section6"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Delitos Informáticos</a
+          >
+          <a
+            href="section7.html"
+            data-section="section7"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Conclusiones y Referencias</a
+          >
+        </div>
+      </div>
+      <div id="nav-menu" class="lg:hidden hidden">
+        <a
+          href="index.html"
+          data-section="section1"
+          class="block text-white bg-blue-600 p-2"
+          >Portada</a
+        >
+        <a
+          href="section2.html"
+          data-section="section2"
+          class="block text-white bg-blue-600 p-2"
+          >Legislación Informática</a
+        >
+        <a
+          href="section3.html"
+          data-section="section3"
+          class="block text-white bg-blue-600 p-2"
+          >Leyes Nacionales e Internacionales</a
+        >
+        <a
+          href="section4.html"
+          data-section="section4"
+          class="block text-white bg-blue-600 p-2"
+          >Trámite de Registro de Obras</a
+        >
+        <a
+          href="section5.html"
+          data-section="section5"
+          class="block text-white bg-blue-600 p-2"
+          >Ética Informática</a
+        >
+        <a
+          href="section6.html"
+          data-section="section6"
+          class="block text-white bg-blue-600 p-2"
+          >Delitos Informáticos</a
+        >
+        <a
+          href="section7.html"
+          data-section="section7"
+          class="block text-white bg-blue-600 p-2"
+          >Conclusiones y Referencias</a
+        >
+      </div>
+    </nav>
+    <!-- Content -->
+    <div class="container mx-auto p-4">
+      <div id="section2">
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">
+            1.1 Conceptos de Derechos de Autor, Privacidad y Protección de Datos
+          </h2>
+
+          <article class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">Derechos de Autor</h3>
+            <p class="mb-4" style="text-align: justify;">
+              Los derechos de autor son un conjunto de normas y principios que
+              regulan los derechos morales y patrimoniales que la ley concede a
+              los autores por el hecho de crear una obra literaria, artística,
+              musical, científica o didáctica, esté publicada o inédita.
+            </p>
+
+            <div class="mb-4">
+              <h4 class="text-lg font-semibold mb-2">Derechos Morales</h4>
+              <ul class="list-disc list-inside ml-4">
+                <li>
+                  <strong>Derecho de paternidad:</strong> el derecho a ser
+                  reconocido como el autor de la obra.
+                </li>
+                <li>
+                  <strong>Derecho de integridad:</strong> el derecho a oponerse
+                  a cualquier deformación, mutilación u otra modificación de la
+                  obra que pueda perjudicar el honor o la reputación del autor.
+                </li>
+                <li>
+                  <strong>Derecho de divulgación:</strong> el derecho a decidir
+                  si la obra ha de ser divulgada y en qué forma.
+                </li>
+                <li>
+                  <strong>Derecho de retracto o arrepentimiento:</strong> el
+                  derecho a retirar la obra del comercio, bajo ciertas
+                  condiciones.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-semibold mb-2">Derechos Patrimoniales</h4>
+              <ul class="list-disc list-inside ml-4">
+                <li>
+                  <strong>Derecho de reproducción:</strong> el derecho a
+                  reproducir la obra en cualquier forma.
+                </li>
+                <li>
+                  <strong>Derecho de distribución:</strong> el derecho a
+                  distribuir copias de la obra al público.
+                </li>
+                <li>
+                  <strong>Derecho de comunicación pública:</strong> el derecho a
+                  comunicar la obra al público por medios como la radio,
+                  televisión, Internet, etc.
+                </li>
+                <li>
+                  <strong>Derecho de transformación:</strong> el derecho a
+                  autorizar adaptaciones o modificaciones de la obra.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article>
+            <h3 class="text-xl font-semibold mb-2">
+              Privacidad y Protección de Datos Personales
+            </h3>
+            <p class="mb-4" style="text-align: justify;">
+              La privacidad y protección de datos personales se refiere a la
+              gestión adecuada y segura de los datos personales de los
+              individuos, garantizando que estos no sean utilizados de manera
+              indebida. Esto incluye una serie de principios y prácticas
+              diseñadas para proteger la información personal contra el acceso
+              no autorizado, el uso indebido, la divulgación, la alteración y la
+              destrucción.
+            </p>
+
+            <div>
+              <h4 class="text-lg font-semibold mb-2">
+                Principios de Protección de Datos
+              </h4>
+              <ul class="list-disc list-inside ml-4">
+                <li>
+                  <strong>Licitud, lealtad y transparencia:</strong> los datos
+                  deben ser procesados de manera legal, justa y transparente
+                  para el sujeto de datos.
+                </li>
+                <li>
+                  <strong>Limitación de la finalidad:</strong> los datos deben
+                  ser recopilados con fines específicos, explícitos y legítimos,
+                  y no ser procesados de manera incompatible con esos fines.
+                </li>
+                <li>
+                  <strong>Minimización de datos:</strong> los datos deben ser
+                  adecuados, relevantes y limitados a lo necesario en relación
+                  con los fines para los que son procesados.
+                </li>
+                <li>
+                  <strong>Exactitud:</strong> los datos deben ser exactos y,
+                  cuando sea necesario, actualizados.
+                </li>
+                <li>
+                  <strong>Limitación del plazo de conservación:</strong> los
+                  datos deben mantenerse en una forma que permita la
+                  identificación de los sujetos de datos durante no más tiempo
+                  del necesario para los fines del procesamiento.
+                </li>
+                <li>
+                  <strong>Integridad y confidencialidad:</strong> los datos
+                  deben ser procesados de manera que se garantice la seguridad
+                  adecuada, incluida la protección contra el procesamiento no
+                  autorizado o ilegal y contra la pérdida, destrucción o daño
+                  accidental.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        <img
+          src="./Images/imageen1.jpg"
+          alt="Protección de datos"
+          class="w-full mb-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

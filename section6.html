@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio Web Institucional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./Styles.css" rel="stylesheet" />
+    <style>
+      /* Custom CSS for transitions and animations */
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.5s ease;
+      }
+      .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+        opacity: 0;
+      }
+
+      /* Ensure images fit within the container */
+     
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white font-bold w-32 text-sm">
+        
+        </div>
+        <div class="block lg:hidden">
+          <button id="nav-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a
+            href="index.html"
+            data-section="section1"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Portada</a
+          >
+          <a
+            href="section2.html"
+            data-section="section2"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Legislación Informática</a
+          >
+          <a
+            href="section3.html"
+            data-section="section3"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Leyes Nacionales e Internacionales</a
+          >
+          <a
+            href="section4.html"
+            data-section="section4"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Trámite de Registro de Obras</a
+          >
+          <a
+            href="section5.html"
+            data-section="section5"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Ética Informática</a
+          >
+          <a
+            href="section6.html"
+            data-section="section6"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Delitos Informáticos</a
+          >
+          <a
+            href="section7.html"
+            data-section="section7"
+            class="nav-link text-white hover:bg-blue-700 p-2 rounded"
+            >Conclusiones y Referencias</a
+          >
+        </div>
+      </div>
+      <div id="nav-menu" class="lg:hidden hidden">
+        <a
+          href="index.html"
+          data-section="section1"
+          class="block text-white bg-blue-600 p-2"
+          >Portada</a
+        >
+        <a
+          href="section2.html"
+          data-section="section2"
+          class="block text-white bg-blue-600 p-2"
+          >Legislación Informática</a
+        >
+        <a
+          href="section3.html"
+          data-section="section3"
+          class="block text-white bg-blue-600 p-2"
+          >Leyes Nacionales e Internacionales</a
+        >
+        <a
+          href="section4.html"
+          data-section="section4"
+          class="block text-white bg-blue-600 p-2"
+          >Trámite de Registro de Obras</a
+        >
+        <a
+          href="section5.html"
+          data-section="section5"
+          class="block text-white bg-blue-600 p-2"
+          >Ética Informática</a
+        >
+        <a
+          href="section6.html"
+          data-section="section6"
+          class="block text-white bg-blue-600 p-2"
+          >Delitos Informáticos</a
+        >
+        <a
+          href="section7.html"
+          data-section="section7"
+          class="block text-white bg-blue-600 p-2"
+          >Conclusiones y Referencias</a
+        >
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto p-4">
+      <div id="section6">
+        <h1 class="text-4xl font-bold mb-4">Delitos Informáticos</h1>
+        <h2 class="text-3xl font-bold mt-4 mb-2">
+          2.2 Características de los delitos informáticos tipificados en México
+        </h2>
+        <article class="mb-6">
+          <p class="mb-4">
+            En México, los delitos informáticos están definidos y regulados por
+            la ley, y abarcan una variedad de actividades que afectan la
+            seguridad y la integridad de los sistemas informáticos y los datos.
+            A continuación, se describen las características principales de los
+            delitos informáticos tipificados en la legislación mexicana:
+          </p>
+
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">
+              1. Acceso No Autorizado a Sistemas y Datos Informáticos
+            </h3>
+            <p class="mb-2">
+              Este delito se refiere al acceso a sistemas informáticos o redes
+              sin el permiso adecuado. Las características incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Intrusión en Sistemas:</strong> Acceso no autorizado a
+                sistemas informáticos, redes o bases de datos, a menudo
+                utilizando técnicas de hacking o explotación de
+                vulnerabilidades.
+              </li>
+              <li>
+                <strong>Explotación de Credenciales:</strong> Uso de
+                credenciales robadas o adquiridas de manera ilegal para acceder
+                a sistemas protegidos.
+              </li>
+              <li>
+                <strong>Intercepción de Comunicaciones:</strong> Captura no
+                autorizada de datos transmitidos a través de redes, como correos
+                electrónicos o mensajes en línea.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">
+              2. Modificación o Eliminación de Datos Sin Permiso
+            </h3>
+            <p class="mb-2">
+              Este delito se refiere a la alteración o eliminación de datos sin
+              la debida autorización. Sus características son:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Alteración de Información:</strong> Cambios no
+                autorizados en la información almacenada en sistemas, que pueden
+                afectar la integridad y precisión de los datos.
+              </li>
+              <li>
+                <strong>Eliminación de Datos:</strong> Borrado de información
+                crítica sin permiso, que puede llevar a la pérdida de datos
+                importantes y afectar la funcionalidad del sistema.
+              </li>
+              <li>
+                <strong>Manipulación de Registros:</strong> Modificación de
+                registros electrónicos para alterar información, resultados o
+                registros históricos.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-2">
+              3. Uso de Software Malicioso (Malware)
+            </h3>
+            <p class="mb-2">
+              El uso de software malicioso es un delito que involucra programas
+              diseñados para causar daño o acceder de manera no autorizada a
+              sistemas. Las características del malware incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Virus:</strong> Programas que se replican y se propagan
+                a través de archivos o sistemas, causando daño a los datos y a
+                la funcionalidad del sistema.
+              </li>
+              <li>
+                <strong>Gusanos:</strong> Malware que se propaga a través de
+                redes sin la intervención del usuario, causando sobrecarga en
+                los recursos del sistema y posibles interrupciones.
+              </li>
+              <li>
+                <strong>Troyanos:</strong> Software que se presenta como
+                legítimo pero que, una vez instalado, permite el acceso no
+                autorizado al sistema y puede robar información o dañar el
+                sistema.
+              </li>
+              <li>
+                <strong>Ransomware:</strong> Tipo de malware que encripta los
+                datos del sistema y exige un rescate para desbloquearlos, lo que
+                puede llevar a la pérdida de acceso a información crítica.
+              </li>
+              <li>
+                <strong>Spyware:</strong> Programas diseñados para espiar y
+                recopilar información personal del usuario sin su conocimiento,
+                y transmitirla a terceros.
+              </li>
+            </ul>
+            <p class="mt-2">
+              La prevención de malware incluye la implementación de medidas de
+              seguridad adecuadas, como el uso de software antivirus,
+              actualizaciones regulares de sistemas y prácticas seguras en
+              línea.
+            </p>
+          </div>
+        </article>
+        <img
+          src="./Images/seguridad.jpg"
+          alt="Aspectos legales de delitos informáticos"
+          class="w-full mb-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        />
+        <h2 class="text-3xl font-bold mt-4 mb-2">
+          2.4 Proceso de elaboración de códigos de conducta y ética informática
+        </h2>
+        <article class="mb-6">
+          <p class="mb-4">
+            La elaboración de códigos de conducta y ética informática es crucial
+            para garantizar un entorno tecnológico seguro y ético dentro de una
+            organización. Este proceso incluye varios pasos clave, cada uno con
+            su propio conjunto de actividades y consideraciones:
+          </p>
+
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">
+              1. Definir los Valores y Principios Éticos de la Organización
+            </h3>
+            <p class="mb-2">
+              Este paso implica establecer una base sólida de valores y
+              principios que guiarán el comportamiento de los miembros de la
+              organización. Las características de esta fase incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Identificación de Valores Clave:</strong> Determinar los
+                valores fundamentales que la organización desea promover, como
+                la integridad, la responsabilidad y la transparencia.
+              </li>
+              <li>
+                <strong>Desarrollo de Principios Éticos:</strong> Crear
+                principios claros que definan cómo se deben aplicar estos
+                valores en el uso de la tecnología y el manejo de datos.
+              </li>
+              <li>
+                <strong>Alineación con la Misión:</strong> Asegurarse de que los
+                valores y principios estén alineados con la misión y visión
+                generales de la organización.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">
+              2. Establecer Políticas Claras sobre el Uso de la Tecnología
+            </h3>
+            <p class="mb-2">
+              La formulación de políticas claras ayuda a establecer normas sobre
+              cómo se debe utilizar la tecnología dentro de la organización. Las
+              características de esta fase incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Definición de Políticas de Uso:</strong> Crear
+                directrices sobre el uso aceptable de sistemas, redes y datos,
+                incluyendo restricciones y autorizaciones.
+              </li>
+              <li>
+                <strong>Seguridad y Privacidad:</strong> Incluir políticas sobre
+                la protección de datos y la seguridad de la información para
+                prevenir accesos no autorizados y pérdidas de datos.
+              </li>
+              <li>
+                <strong>Protocolos de Respuesta:</strong> Establecer
+                procedimientos para responder a incidentes de seguridad o
+                violaciones de políticas.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">
+              3. Capacitar a los Empleados en Prácticas Éticas y Seguras
+            </h3>
+            <p class="mb-2">
+              La capacitación es esencial para asegurar que todos los empleados
+              comprendan y apliquen las políticas y principios establecidos. Las
+              características de esta fase incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Programas de Formación:</strong> Implementar sesiones de
+                capacitación regulares sobre ética informática, seguridad de
+                datos y mejores prácticas.
+              </li>
+              <li>
+                <strong>Materiales Educativos:</strong> Proporcionar recursos,
+                como manuales y guías, que expliquen las políticas y
+                procedimientos en detalle.
+              </li>
+              <li>
+                <strong>Evaluaciones Continuas:</strong> Realizar evaluaciones
+                periódicas para asegurar que los empleados comprendan y apliquen
+                correctamente las políticas.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-2">
+              4. Monitorear y Hacer Cumplir las Políticas Establecidas
+            </h3>
+            <p class="mb-2">
+              Monitorear y hacer cumplir las políticas es clave para asegurar el
+              cumplimiento y abordar cualquier violación de manera efectiva. Las
+              características de esta fase incluyen:
+            </p>
+            <ul class="list-disc list-inside ml-4">
+              <li>
+                <strong>Implementación de Sistemas de Monitoreo:</strong>
+                Utilizar herramientas y técnicas para supervisar el cumplimiento
+                de las políticas y detectar posibles violaciones.
+              </li>
+              <li>
+                <strong>Auditorías y Revisiones:</strong> Realizar auditorías
+                periódicas para evaluar la efectividad de las políticas y su
+                implementación.
+              </li>
+              <li>
+                <strong>Acciones Disciplinarias:</strong> Establecer medidas y
+                procedimientos para tratar las violaciones de políticas y tomar
+                acciones correctivas.
+              </li>
+            </ul>
+            <p class="mt-2">
+              La eficacia del código de conducta y las políticas de ética
+              informática dependen de un compromiso continuo con la
+              capacitación, la supervisión y la aplicación efectiva de las
+              normas.
+            </p>
+          </div>
+        </article>
+        <img
+          src="./Images/hacker.jpg"
+          alt="Códigos de conducta informática"
+          class="w-full mb-4 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
